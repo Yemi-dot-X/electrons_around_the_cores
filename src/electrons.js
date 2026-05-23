@@ -1,4 +1,4 @@
-/*function electrons(dice) {
+function electrons(dice) {
   let sum = 0;
 
   for (let i = 0; i < dice.length; i++) {
