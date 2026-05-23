@@ -1,4 +1,4 @@
-function electrons(dice) {
+/*function electrons(dice) {
 
     if (dice.toString() === "1,2,3,4,5") {
         return 6;
@@ -17,4 +17,22 @@ function electrons(dice) {
     }
 
 }
+*/
+function electrons(dice) {
 
+    let sum = 0;
+
+    for(let i = 0; i < dice.length; i++) {
+
+        if(dice[i] === 3) {
+            sum += 2;
+        }
+
+        if(dice[i] === 5) {
+            sum += 4;
+        }
+
+    }
+
+    return sum;
+}
